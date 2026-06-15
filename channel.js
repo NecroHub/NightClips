@@ -14,11 +14,14 @@ const channelId = params.get("id");
 // Special override for NightClipsOfficial
 // =====================
 const WATCHER_BADGES = [
+  { min: 1000000, img: "https://iili.io/Cn6SkHG.png",      alt: "1m Watchers" },
+  { min: 500000, img: "https://iili.io/Cn6SOSs.png",      alt: "500k Watchers" },
+  { min: 100000, img: "https://iili.io/Cn6SvRf.png",      alt: "100k Watchers" },
   { min: 10000, img: "https://iili.io/qjDTvbR.png",      alt: "10k Watchers" },
   { min: 1000,  img: "https://iili.io/qjDTOJa.png",     alt: "1k Watchers"  },
   { min: 100,   img: "https://iili.io/qjDTSxp.png",      alt: "100 Watchers" },
 ];
-const CREATOR_BADGE = { img: "https://iili.io/qjDTL5G.png", alt: "Creator" };
+const CREATOR_BADGE = { img: "https://iili.io/Cn6Xwp1.webp", alt: "Creator" };
 
 function getBadgeForUser(username, watcherCount, override) {
   if (username === "NightClipsOfficial") return CREATOR_BADGE;
